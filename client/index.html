@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <head>
+    <link rel="shortcut icon" href="./m.png" type="image/png" />
+    <script src="./index.js" type="module" ></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="start">Hello! 
+        <input type="input" class="username" placeholder="Name" name="name" id='name' required />
+        <label for="name" class="ustxt">Username</label>
+        <button class="glow-on-hover" type="button" id="namb">submit</button>
+    </div>
+    <script>
+        $("button.glow-on-hover").click(() => {
+            if (document.getElementById("name").value != '')
+                $(".start").animate({ opacity: "hide" }, "slow");
+        });
+    </script>
+    <div id="msg_table" class="m_table">
+    </div>
+    <h2 class="msg"><input class="m_input" id="message" type="text" size="20" maxlength="150"/></h2> 
+</body>

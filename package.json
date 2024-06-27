@@ -1,0 +1,21 @@
+{
+  "name": "04_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-server": "^14.1.1",
+    "prettier": "^3.3.2",
+    "ws": "^8.17.0"
+  }
+}
